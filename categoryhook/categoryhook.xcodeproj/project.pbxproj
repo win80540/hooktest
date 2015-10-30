@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36306D031BE0E6C0001DA933 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36306D021BE0E6C0001DA933 /* Foundation.framework */; };
+		36306D0E1BE0E6C0001DA933 /* categoryhook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 36306D0D1BE0E6C0001DA933 /* categoryhook.mm */; };
+		36306D191BE0EA52001DA933 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 36306D181BE0EA52001DA933 /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36306CFF1BE0E6C0001DA933 /* categoryhook.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = categoryhook.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		36306D021BE0E6C0001DA933 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		36306D071BE0E6C0001DA933 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		36306D081BE0E6C0001DA933 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		36306D0A1BE0E6C0001DA933 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		36306D0B1BE0E6C0001DA933 /* categoryhook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "categoryhook-Prefix.pch"; sourceTree = "<group>"; };
+		36306D0C1BE0E6C0001DA933 /* categoryhook.xm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = categoryhook.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		36306D0D1BE0E6C0001DA933 /* categoryhook.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = categoryhook.mm; sourceTree = "<group>"; };
+		36306D121BE0E6C0001DA933 /* categoryhook.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = categoryhook.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/categoryhook.plist; sourceTree = "<group>"; };
+		36306D181BE0EA52001DA933 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../Code/Framework/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36306CFB1BE0E6C0001DA933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36306D191BE0EA52001DA933 /* libsubstrate.dylib in Frameworks */,
+				36306D031BE0E6C0001DA933 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36306CF41BE0E6C0001DA933 = {
+			isa = PBXGroup;
+			children = (
+				36306D041BE0E6C0001DA933 /* categoryhook */,
+				36306D011BE0E6C0001DA933 /* Frameworks */,
+				36306D001BE0E6C0001DA933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36306D001BE0E6C0001DA933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36306CFF1BE0E6C0001DA933 /* categoryhook.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36306D011BE0E6C0001DA933 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36306D181BE0EA52001DA933 /* libsubstrate.dylib */,
+				36306D021BE0E6C0001DA933 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36306D041BE0E6C0001DA933 /* categoryhook */ = {
+			isa = PBXGroup;
+			children = (
+				36306D0C1BE0E6C0001DA933 /* categoryhook.xm */,
+				36306D0D1BE0E6C0001DA933 /* categoryhook.mm */,
+				36306D051BE0E6C0001DA933 /* Package */,
+				36306D091BE0E6C0001DA933 /* Supporting Files */,
+			);
+			path = categoryhook;
+			sourceTree = "<group>";
+		};
+		36306D051BE0E6C0001DA933 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				36306D061BE0E6C0001DA933 /* DEBIAN */,
+				36306D0F1BE0E6C0001DA933 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		36306D061BE0E6C0001DA933 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				36306D071BE0E6C0001DA933 /* control.txt */,
+				36306D081BE0E6C0001DA933 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		36306D091BE0E6C0001DA933 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				36306D0A1BE0E6C0001DA933 /* PackageVersion.plist */,
+				36306D0B1BE0E6C0001DA933 /* categoryhook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		36306D0F1BE0E6C0001DA933 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				36306D101BE0E6C0001DA933 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		36306D101BE0E6C0001DA933 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				36306D111BE0E6C0001DA933 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		36306D111BE0E6C0001DA933 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				36306D121BE0E6C0001DA933 /* categoryhook.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36306CFC1BE0E6C0001DA933 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		36306CFE1BE0E6C0001DA933 /* categoryhook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36306D151BE0E6C0001DA933 /* Build configuration list for PBXNativeTarget "categoryhook" */;
+			buildPhases = (
+				36306CF91BE0E6C0001DA933 /* ShellScript */,
+				36306CFA1BE0E6C0001DA933 /* Sources */,
+				36306CFB1BE0E6C0001DA933 /* Frameworks */,
+				36306CFC1BE0E6C0001DA933 /* Headers */,
+				36306CFD1BE0E6C0001DA933 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = categoryhook;
+			productName = categoryhook;
+			productReference = 36306CFF1BE0E6C0001DA933 /* categoryhook.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36306CF51BE0E6C0001DA933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					36306CFE1BE0E6C0001DA933 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 36306CF81BE0E6C0001DA933 /* Build configuration list for PBXProject "categoryhook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 36306CF41BE0E6C0001DA933;
+			productRefGroup = 36306D001BE0E6C0001DA933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36306CFE1BE0E6C0001DA933 /* categoryhook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36306CF91BE0E6C0001DA933 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		36306CFD1BE0E6C0001DA933 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36306CFA1BE0E6C0001DA933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36306D0E1BE0E6C0001DA933 /* categoryhook.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		36306D131BE0E6C0001DA933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		36306D141BE0E6C0001DA933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		36306D161BE0E6C0001DA933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "categoryhook/categoryhook-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		36306D171BE0E6C0001DA933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "categoryhook/categoryhook-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36306CF81BE0E6C0001DA933 /* Build configuration list for PBXProject "categoryhook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36306D131BE0E6C0001DA933 /* Debug */,
+				36306D141BE0E6C0001DA933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36306D151BE0E6C0001DA933 /* Build configuration list for PBXNativeTarget "categoryhook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36306D161BE0E6C0001DA933 /* Debug */,
+				36306D171BE0E6C0001DA933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 36306CF51BE0E6C0001DA933 /* Project object */;
+}

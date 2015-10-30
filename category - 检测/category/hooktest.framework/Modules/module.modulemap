@@ -1,0 +1,6 @@
+framework module hooktest {
+  umbrella header "hooktest.h"
+
+  export *
+  module * { export * }
+}
